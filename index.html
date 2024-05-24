@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background: #A0A9CC;
+        }
+        h1{
+            color:  #3c455f;
+            display: flex;
+            justify-content: center;
+            text-decoration:underline;
+        }
+        .reg-form{
+            background: border-box;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background-color:#B7BED8;
+            border: none;
+            outline: none;
+            box-shadow: 0 50px 50px rgba(0, 0, 0, .2);
+            margin: 15px auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-right: 45px;
+            width: 600px;
+        }
+        .label-field{
+            display: inline-block;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin: 0 5px 5px 0;
+            text-align: right;
+            width: 100px;
+        }
+        .field{
+            border: 1px solid #ccc;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-sizing: border-box;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 240px;
+            border: solid 0.2px;
+            outline: none;
+            border-radius: 10px;
+            background-color: rgba(241, 236, 236, 0.76);
+        }
+       .row-field{
+        position: relative;
+        width: 100%;
+       }
+       span{
+        color: red;
+       }
+       .register{
+        width: 30%;
+        height: 40px;
+        box-shadow:  4px 4px 5px rgba(0, 0, 0, .4);
+        border: none;
+        text-align: center;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 50px;
+        background-color:  #a881af;
+        transition-duration: 0.5s;
+       }
+       .register:hover{
+        background-color: #80669d;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form class="reg-form">
+        <center>
+    <div class="row-field">
+        <label class="label-field">First Name</label>
+        <input type="text" class="field firstname-input" required> <span>*</span>
+    </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+        <label class="label-field">Last name</label>
+        <input type="text" class="field lastname-input"> <span>*</span>
+        </div>
+
+       <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field">Father Name</label>
+            <input type="text" class="field fathername-input" required> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field">Date of birth</label>
+            <input type="date" class="field dob-input" required> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field">Telephone</label>
+            <input type="number" class="field tel-input"> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field">High School Name</label>
+            <input type="text" class="field school-input" required> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field address">Address</label>
+            <input type="text" class="field address"> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field">Your Level</label>
+            <select name="Year" class="field years">
+                <option value="1st Year" selected>1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field">Email</label>
+            <input type="email" class="field email-input" required> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="row-field">
+            <label class="label-field">Select Course</label>
+            <select name="courses" class="field courses">
+                <option value="Full Stack Web Development">Full Stack Web Development</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Machine Learning">Machine Learning</option>
+            </select> <span>*</span>
+        </div>
+
+        <!-- <br> -->
+        
+        <p>NOTE : <span>*</span> denotes a required field.</p><br>
+
+        <button class="register">Register</button>
+    </div>    </center>
+    </form>
+    
+</body>
+</html>
